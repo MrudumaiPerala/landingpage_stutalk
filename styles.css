@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url('background.jpg');
+    background-size: cover;
+    background-color: #121212; 
+    color: #fff; 
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+header {
+    background: #1a1a1a;
+    padding: 15px 0;
+    border-bottom: 2px solid #333;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+/* Logo */
+.logo img {
+    height: 50px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e54029;
+}
+
+/* Right Section */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Search Input */
+.header-right input {
+    padding: 8px 12px;
+    border: 1px solid #555;
+    border-radius: 20px;
+    background: #222;
+    color: #f1f1f1;
+    outline: none;
+}
+
+.header-right input::placeholder {
+    color: #aaa;
+}
+
+/* Join Us Button */
+.join-btn {
+    background: #e54029;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.join-btn:hover {
+    background: #c13220;
+}
+
+/* Mobile Menu */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: #f1f1f1;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #1a1a1a;
+        padding: 15px;
+        border-top: 2px solid #333;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .header-right {
+        display: none;
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+
+
+/* Hero Section */
+.hero {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #1a1a1a 30%, #222 70%);
+    padding: 0 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #f1f1f1;
+    line-height: 1.2;
+}
+
+.hero-content h1 span {
+    color: #e54029;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin: 15px 0 25px;
+}
+
+/* Hero Buttons */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s ease-in-out;
+}
+
+.explore-btn {
+    background: #444;
+    color: white;
+    border: 2px solid #555;
+}
+
+.explore-btn:hover {
+    background: #555;
+}
+
+.join-btn {
+    background: #e54029;
+    color: white;
+    border: 2px solid #e54029;
+}
+
+.join-btn:hover {
+    background: #c13220;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+}
